@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+:root{
+    --dourado: rgb(227,169,39);
+    --preto: rgb(0, 0, 0);
+    --branco: rgb(255, 255, 255);
+    --houver: rgb(150, 127, 68);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--preto);
+    color: var(--branco)
+}
+.dourado{
+    color: var(--dourado);
+}
+.pai{
+    gap: 5%;
+    margin:3% 0 0 10%;
+    display: flex;
+    align-items: center;
+}
+.texto {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+}
+.titulo {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+.paragrafo {
+    font-size: 1.125rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+}
+.subtitulo{
+    font-size: 1.125rem;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: 50%;
+}
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    border: 2px solid var(--dourado);
+    border-color: var(--dourado);
+    color: var(--dourado);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 21.5px 0;
+    width: 100%;
+    border-radius: 16px;
+}
+.link:hover{
+    background-color: var(--houver);
+}
+.logo{
+    max-width: 50%;
+    height: auto;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2% 0 0 10%;
+    gap: 120px;
+}
+.links_cabecalho{
+    color: var(--dourado);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    gap: 40px;
+}
+@media(max-width: 900px) {
+    .pai{
+        flex-direction: column-reverse;
+        gap: 40px;
+        margin: 10% 6% 0 6%;
+    }
+    .cabecalho{
+        justify-content: center;
+        padding: 5%;
+    }
+    .texto{
+        width: auto;
+    }
+    .logo{
+        max-width: 100%;
+    }
+    .link{
+        padding: 21.5px 10px;
+    }
+}
